@@ -8,10 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.lang.reflect.Method;
 import java.util.UUID;
-
-import org.aspectj.weaver.patterns.ArgsAnnotationPointcut;
 
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;

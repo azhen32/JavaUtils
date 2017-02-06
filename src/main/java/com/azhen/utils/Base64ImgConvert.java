@@ -8,19 +8,11 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.UUID;
 
-import org.apache.derby.tools.sysinfo;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.methods.RequestBuilder;
 
 import com.alibaba.fastjson.JSONObject;
 
-import cc.messcat.entity.Product;
-import cc.messcat.web.qcmr.form.bean.ProductForm;
-import cc.messcat.web.qcmr.vo.basic.Image;
-import cc.messcat.web.qcmr.vo.basic.Result;
-import cc.messcat.wechat.weixin.popular.bean.User;
-import cc.messcat.wechat.weixin.popular.client.LocalHttpClient;
-import edu.emory.mathcs.backport.java.util.Arrays;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 

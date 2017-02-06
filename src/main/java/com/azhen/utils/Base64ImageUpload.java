@@ -6,16 +6,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
-import org.jaxen.function.ext.EndsWithFunction;
-
-import com.mysql.jdbc.Field;
-
-import cc.modules.constants.Constants;
-import sun.misc.BASE64Decoder;
 
 /**
  * 转换base64上传的图片String，并还原图片
@@ -38,7 +30,7 @@ public class Base64ImageUpload {
 						.append(inputFileExt).toString();
 
 				String outputFilePath = new StringBuffer(ServletActionContext.getServletContext().getRealPath(savePath))
-						.append(Constants.FILE_SEPARATOR).append(fileName).toString();
+						.append("/").append(fileName).toString();
 
 				File file = new File(outputFilePath);
 				if (!file.exists() && file.createNewFile()) {
